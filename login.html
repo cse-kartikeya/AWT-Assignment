@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Login System</title>
+    <style media="screen">
+      body{background-color:rgb(233, 157, 94);font-family: Arial, sans-serif;}
+      h1{color:white;text-align:center;margin-top:70px;}
+      .login_box{background-color:white;width:40%;height:320px;margin:auto;}
+      h2{text-align:center;padding-top:30px;font-weight: normal;}
+      .info{width:80%;height:200px;margin: auto;}
+      input{width:100%;height:10%;}
+      input:focus{border: none;background-color: transparent;resize: none;outline: none;border:3px solid rgb(255, 131, 30);}
+      .submit_button{box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);font-size: 18px;
+        border: none;background-color: transparent;resize: none;outline: none;background-color: rgb(19, 230, 149);width:100%;height:20%;color:white;opacity: 0.8;}
+      .submit_button:hover{opacity:1}
+      .submit_button:focus{color:black;}
+      p{font-size: 14px;}
+    </style>
+  </head>
+  <body>
+    <h1>WELCOME TO STUDENT MANAGEMENT SYSTEM</h1>
+    <div class="login_box">
+       <h2><b>Log In To Student Information System</b></h2>
+       <form class="info" action="http://localhost/kartikeya/homepage.html" method="post">
+          <p><b style="opacity:0.85;">User ID:</b></p>
+          <input type="text" name="username" value="">
+          <p><b style="opacity:0.85;">Enter Password:</b></p>
+          <input type="password" name="password" value="">
+          <br><br><br>
+          <input class="submit_button" type="submit" value="SUBMIT"></input>
+       </form>
+    </div>
+  </body>
+</html>
